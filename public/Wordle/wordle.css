@@ -1,0 +1,236 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+  background-color: #1d1c1c;
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  margin-top: -5px;
+  background-color: #bbc2e2;
+}
+
+.Wordle_Header {
+  flex-grow: 1;
+  text-align: left;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: -10px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.menu,
+.setting,
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #bbc2e2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: -10px;
+  margin-top: 0;
+
+}
+
+.grid {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  max-width: 300px;
+  padding: 10px;
+  gap: 15px;
+}
+
+.tile {
+  border: 2px solid #787c7e;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: text;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.keyboard {
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 32%;
+  right: 24%;
+
+}
+
+.keyboard-row {
+  margin-bottom: 7.5px;
+}
+
+.keyboard-row:nth-child(2) {
+  padding-left: 30px;
+}
+
+
+.keyboard button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0px;
+  background-color: #818384;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.keyboard button:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+.keyboard button:active {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+
+.key button:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.icons {
+  font-size: 24px;
+
+}
+
+.icons i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/*highlighting for keyboard buttons*/
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #818384;
+    color: aliceblue;
+  }
+
+  50% {
+    background-color: #fcfeff;
+    color: #000000;
+  }
+
+  100% {
+    background-color: #818384;
+    color: aliceblue;
+
+  }
+}
+
+
+
+
+.animate-background {
+  animation: changeBackgroundColor 0.3s linear forwards;
+}
+
+
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+    /* Starting position */
+  }
+
+  to {
+    transform: translateY(-5px);
+    /* Ending position */
+  }
+}
+
+.move-up-animation {
+  animation: moveUp 0.5s ease;
+  /* Apply animation */
+}
+
+
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  100% {
+    transform: rotate(180deg);
+
+  }
+}
+
+.rotate-animation {
+  animation: rotate 1.5s ease;
+}
+
+.output {
+  height: 50px;
+  width: 150px;
+  border: 2px solid #787c7e;
+  margin: 0 auto;
+  text-align: center;
+  color: aliceblue;
+}
+
+.hidden {
+  display: none;
+}
+
+.correctPositon{
+background-color: #019801 !important;
+}
+
+
+.correctLetterWrongPosition{
+background-color: #d8be48 !important;
+}
+
+
+.wrongPosition{
+ background-color: #F83C3F !important;
+}
+
+
+
+

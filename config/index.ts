@@ -6,13 +6,13 @@ export const navLinks = [
 ]
 
 export const site = {
-  name: "Next 15 Tailwind 4 Template",
-  url: "https://nextv15-tailwindv4-starter.vercel.app/",
+  name: "Joel's Portfolio",
+  url: "https://joel-raju.vercel.app/",
   ogImage: "https://nextv15-tailwindv4-starter.vercel.app/og.jpg",
   description: "An opinionated Next.js 15 and Tailwind CSS 4 starter template.",
   links: {
-    twitter: "https://twitter.com/cbmonx",
-    github: "https://github.com/cbmongithub",
+    
+    github: "https://github.com/JoelRaju403",
   },
   handles: {
     twitter: "@cbmonx",
